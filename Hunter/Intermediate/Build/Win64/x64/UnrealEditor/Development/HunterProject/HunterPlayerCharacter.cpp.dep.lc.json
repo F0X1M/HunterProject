@@ -1,0 +1,25 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\dev\\hunterproject\\hunter\\source\\hunterproject\\private\\character\\hunterplayercharacter.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\dev\\hunterproject\\hunter\\intermediate\\build\\win64\\x64\\hunterprojecteditor\\development\\engine\\sharedpch.engine.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\dev\\hunterproject\\hunter\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\hunterproject\\definitions.hunterproject.h",
+            "d:\\dev\\hunterproject\\hunter\\source\\hunterproject\\public\\character\\hunterplayercharacter.h",
+            "d:\\dev\\hunterproject\\hunter\\source\\hunterproject\\public\\character\\huntercharacterbase.h",
+            "d:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "d:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "d:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "d:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "d:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "d:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "d:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "d:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "d:\\dev\\hunterproject\\hunter\\intermediate\\build\\win64\\unrealeditor\\inc\\hunterproject\\uht\\huntercharacterbase.generated.h",
+            "d:\\dev\\hunterproject\\hunter\\intermediate\\build\\win64\\unrealeditor\\inc\\hunterproject\\uht\\hunterplayercharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

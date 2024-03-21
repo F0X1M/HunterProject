@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\dev\\hunterproject\\hunter\\intermediate\\build\\win64\\unrealeditor\\inc\\hunterproject\\uht\\hunterproject.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\dev\\hunterproject\\hunter\\intermediate\\build\\win64\\x64\\hunterprojecteditor\\development\\engine\\sharedpch.engine.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\dev\\hunterproject\\hunter\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\hunterproject\\definitions.hunterproject.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
