@@ -5,25 +5,18 @@
 
 AHunterCharacterBase::AHunterCharacterBase()
 {
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 
+}
+
+UAbilitySystemComponent* AHunterCharacterBase::GetAbilitySystemComponent() const
+{
+	return AbilitySystemComponent;
 }
 
 void AHunterCharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
 	
-}
-
-void AHunterCharacterBase::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
-
-void AHunterCharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
 }
 

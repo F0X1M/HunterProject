@@ -4,13 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "Character/HunterCharacterBase.h"
-#include "HunterEnemyCharacter.generated.h"
+#include "HunterEnemy.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class HUNTERPROJECT_API AHunterEnemyCharacter : public AHunterCharacterBase
+class HUNTERPROJECT_API AHunterEnemy : public AHunterCharacterBase
 {
 	GENERATED_BODY()
 	

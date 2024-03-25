@@ -4,30 +4,27 @@
 
 #include "CoreMinimal.h"
 #include "AbilitySystemInterface.h"
-#include "GameFramework/Character.h"
-#include "HunterCharacterBase.generated.h"
+#include "GameFramework/PlayerState.h"
+#include "HunterPlayerState.generated.h"
 
 class UAbilitySystemComponent;
 class UAttributeSet;
 
-UCLASS(Abstract)
-class HUNTERPROJECT_API AHunterCharacterBase : public ACharacter, public IAbilitySystemInterface
+UCLASS()
+class HUNTERPROJECT_API AHunterPlayerState : public APlayerState, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
 
 public:
-	AHunterCharacterBase();
-
+	AHunterPlayerState();
+	
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	UAttributeSet* GetAttributeSet() const { return AttributeSet; }
-	
-protected:
-	virtual void BeginPlay() override;
 
+protected:
 	UPROPERTY()
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
 
 	UPROPERTY()
 	TObjectPtr<UAttributeSet> AttributeSet;
-
 };
