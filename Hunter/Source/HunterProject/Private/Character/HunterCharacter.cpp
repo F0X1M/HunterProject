@@ -3,6 +3,7 @@
 
 #include "Character/HunterCharacter.h"
 #include "AbilitySystemComponent.h"
+#include "AbilitySystem/HunterAbilitySystemComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Player/HunterPlayerController.h"
 #include "Player/HunterPlayerState.h"
@@ -36,6 +37,8 @@ void AHunterCharacter::InitAbilityActorInfo()
 	AHunterPlayerState* HunterPlayerState = GetPlayerState<AHunterPlayerState>();
 	check(HunterPlayerState);
 	HunterPlayerState->GetAbilitySystemComponent()->InitAbilityActorInfo(HunterPlayerState, this);
+	Cast<UHunterAbilitySystemComponent>(HunterPlayerState->GetAbilitySystemComponent())->AbilityActorInfoSet();
+	
 	AbilitySystemComponent = HunterPlayerState->GetAbilitySystemComponent();
 	AttributeSet = HunterPlayerState->GetAttributeSet();
 

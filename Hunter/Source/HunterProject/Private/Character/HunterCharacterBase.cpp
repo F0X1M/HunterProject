@@ -20,3 +20,8 @@ void AHunterCharacterBase::BeginPlay()
 	
 }
 
+void AHunterCharacterBase::InitAbilityActorInfo()
+{
+	
+}
+
