@@ -23,10 +23,9 @@ public:
 protected:
 	virtual void BeginPlay() override;
 	virtual void SetupInputComponent() override;
-
-protected:
+	
 	UPROPERTY(EditAnywhere, Category = "Input")
-	TObjectPtr<UInputMappingContext> AuraContext;
+	TObjectPtr<UInputMappingContext> HunterContext;
 
 	UPROPERTY(EditAnywhere, Category = "Input")
 	TObjectPtr<UInputAction> MoveAction;
@@ -36,5 +35,5 @@ protected:
 
 	void Move(const FInputActionValue& InputActionValue);
 
-	void Look(const FInputActionValue& InputValue);
+	void Look(const FInputActionValue& InputActionValue);
 };

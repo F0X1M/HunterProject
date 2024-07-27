@@ -9,9 +9,9 @@
 
 UHunterAttributeSet::UHunterAttributeSet()
 {
-	InitHealth(100.f);
+	InitHealth(50.f);
 	InitMaxHealth(100.f);
-	InitStamina(100.f);
+	InitStamina(50.f);
 	InitMaxStamina(100.f);
 }
 
@@ -86,16 +86,16 @@ void UHunterAttributeSet::OnRep_Health(const FGameplayAttributeData& OldHealth) 
 
 void UHunterAttributeSet::OnRep_MaxHealth(const FGameplayAttributeData& OldMaxHealth) const
 {
-	GAMEPLAYATTRIBUTE_REPNOTIFY(UHunterAttributeSet, Health, OldMaxHealth);
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UHunterAttributeSet, MaxHealth, OldMaxHealth);
 }
 
 void UHunterAttributeSet::OnRep_Stamina(const FGameplayAttributeData& OldStamina) const
 {
-	GAMEPLAYATTRIBUTE_REPNOTIFY(UHunterAttributeSet, Health, OldStamina);
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UHunterAttributeSet, Stamina, OldStamina);
 }
 
 void UHunterAttributeSet::OnRep_MaxStamina(const FGameplayAttributeData& OldMaxStamina) const
 {
-	GAMEPLAYATTRIBUTE_REPNOTIFY(UHunterAttributeSet, Health, OldMaxStamina);
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UHunterAttributeSet, MaxStamina, OldMaxStamina);
 }
 

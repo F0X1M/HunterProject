@@ -5,8 +5,9 @@
 #include "AbilitySystemComponent.h"
 #include "AbilitySystem/HunterAbilitySystemComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
-#include "Player/HunterPlayerController.h"
+#include "Player/HunterPlayerController.h"	
 #include "Player/HunterPlayerState.h"
+#include "UI/HUD/HunterHUD.h"
 
 AHunterCharacter::AHunterCharacter()
 {
@@ -43,11 +44,12 @@ void AHunterCharacter::InitAbilityActorInfo()
 	AttributeSet = HunterPlayerState->GetAttributeSet();
 
 	//Inicjacja HUD
-	/*if (AAuraPlayerController* AuraPlayerController = Cast<AAuraPlayerController>(GetController()))
+	if(AHunterPlayerController* HunterPlayerController = Cast<AHunterPlayerController>(GetController()))
 	{
-		if (AAuraHUD* AuraHUD = Cast<AAuraHUD>(AuraPlayerController->GetHUD()))
+		if(AHunterHUD* HunterHUD = Cast<AHunterHUD>(HunterPlayerController->GetHUD()))
 		{
-			AuraHUD->InitOverlay(AuraPlayerController, AuraPlayerState, AbilitySystemComponent, AttributeSet);
+			HunterHUD->InitOverlay(HunterPlayerController, HunterPlayerState, AbilitySystemComponent, AttributeSet);
 		}
-	}*/
+		
+	}
 }

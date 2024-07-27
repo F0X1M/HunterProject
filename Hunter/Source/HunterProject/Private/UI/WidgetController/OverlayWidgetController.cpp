@@ -4,7 +4,6 @@
 #include "UI/WidgetController/OverlayWidgetController.h"
 #include "AbilitySystem/HunterAbilitySystemComponent.h"
 #include "AbilitySystem/HunterAttributeSet.h"
-#include "UI/Widget/HunterUserWidget.h"
 
 void UOverlayWidgetController::BroadcastInitialValues()
 {
@@ -24,7 +23,7 @@ void UOverlayWidgetController::BindCallbacksToDependencies()
 	AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(HunterAttributeSet->GetHealthAttribute()).AddUObject(this, &UOverlayWidgetController::HealthChanged);
 	AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(HunterAttributeSet->GetMaxHealthAttribute()).AddUObject(this, &UOverlayWidgetController::MaxHealthChanged);
 	AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(HunterAttributeSet->GetStaminaAttribute()).AddUObject(this, &UOverlayWidgetController::StaminaChanged);
-	AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(HunterAttributeSet->GetMaxHealthAttribute()).AddUObject(this, &UOverlayWidgetController::MaxStaminaChanged);
+	AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(HunterAttributeSet->GetMaxStaminaAttribute()).AddUObject(this, &UOverlayWidgetController::MaxStaminaChanged);
 
 	Cast<UHunterAbilitySystemComponent>(AbilitySystemComponent)->EffectAssetTags.AddLambda(
 		[this](const FGameplayTagContainer& AssetTags)
