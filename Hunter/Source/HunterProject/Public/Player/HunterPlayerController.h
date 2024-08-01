@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
+#include "Character/HunterCharacter.h"
+#include "Interaction/EnemyInterface.h"
 #include "HunterPlayerController.generated.h"
 
 class UInputMappingContext;
@@ -36,4 +38,15 @@ protected:
 	void Move(const FInputActionValue& InputActionValue);
 
 	void Look(const FInputActionValue& InputActionValue);
+	
+	void AimTrace();
+
+private:
+
+	AHunterCharacter* ControlledCharacter;
+
+	APlayerCameraManager* PlayerCamera;
+
+	IEnemyInterface* LastActor;
+	IEnemyInterface* ThisActor;
 };

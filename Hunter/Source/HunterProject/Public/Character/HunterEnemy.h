@@ -17,12 +17,24 @@ class HUNTERPROJECT_API AHunterEnemy : public AHunterCharacterBase, public IEnem
 
 public:
 	AHunterEnemy();
+	
 protected:
 	virtual void BeginPlay() override;
+
+	virtual void Tick(float DeltaSeconds) override;
 
 	virtual void InitAbilityActorInfo() override;
 	
 public:
+	
 	void ShowEnemyHealthBar() override;
+	
 	void HideEnemyHealthBar() override;
+
+private:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Widget", meta = (AllowPrivateAccess = "true"))
+	class UWidgetComponent* HealthBarWidget;
+
+	FVector PlayerLocation;
+	
 };

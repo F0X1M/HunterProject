@@ -23,4 +23,7 @@ public:
 
 private:
 	virtual void InitAbilityActorInfo() override;
+
+public:
+	float BulletRange = 2500.f;
 };
